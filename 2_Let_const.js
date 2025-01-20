@@ -2,7 +2,6 @@
 
 // redeclaratoin
 // scop
-// var x
 
 // var x
 
