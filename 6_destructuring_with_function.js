@@ -19,3 +19,41 @@ const user = {
 };
 
 getUser(user);
+
+// ----destructuring object in function
+
+function personInfo({ name, age, city }) {
+    console.log(`Name: ${name}`);
+    console.log(`Age: ${age}`);
+    console.log(`City: ${city}`);
+}
+
+
+const a = { name: "pooja", age: 25, city: "New York" };
+
+personInfo(a);
+// ---------Destructuring Arrays in Function Parameters
+function coordinate([x, y]) {
+    console.log(`X: ${x}, Y: ${y}`);
+}
+const c = [10, 20]
+coordinate(c)
+
+
+// ------------------Destructuring with Default Values:----------
+
+// function printDetails({ name = "Unknown", age = 0, city = "Unknown" }) {
+//     console.log(`Name: ${name}`);
+//     console.log(`Age: ${age}`);
+//     console.log(`City: ${city}`);
+// }
+
+// const person = { name: "John", age: 30 };
+
+// printDetails(person);
+function print({ name = "pp", age }) {
+
+}
+print()
+
+
